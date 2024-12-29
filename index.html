@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agile Poker Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="brand"
+        ><img src="images/brand_logo.svg" alt="brand" />Start Estimating Smarter
+        Today!</a
+      >
+      <li>
+        <ul>
+          <button>About</button>
+          <button>Pricing</button>
+          <button>Home</button>
+        </ul>
+      </li>
+    </header>
+    <p>
+      <li>
+        <ul>
+          Create a Session: Set up a Scrum Poker session for your team.
+        </ul>
+        <ul>
+          Collaborate Live: Team members join, discuss, and vote on story
+          points.
+        </ul>
+        <ul>
+          Achieve Clarity: Uncover discrepancies, align expectations, and
+          finalize estimates.
+        </ul>
+      </li>
+    </p>
+
+    <div class="create-game-popup" id="game-popup">
+      <form class="game-popup-container">
+        <h1>Type a name for your game</h1>
+
+        <label for="game-title"><b>Game Name</b></label>
+        <input
+          type="text"
+          placeholder="Enter game name"
+          name="game-title"
+          required
+        />
+
+        <button type="submit" class="submit-game-popup">Finish</button>
+        <button
+          type="button"
+          class="submit-game-popup-close"
+          onclick="closeGamePopUp()"
+        >
+          Go back
+        </button>
+      </form>
+    </div>
+
+    <button id="createGameButton" onclick="openGamePopUp()">Create Game</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>

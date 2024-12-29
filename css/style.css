@@ -1,0 +1,56 @@
+/* FOOTER START */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+  text-align: none;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+header .brand img {
+  width: 40px;
+  margin-right: 10px;
+  height: auto;
+}
+
+header li {
+  list-style: none;
+}
+header button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* FOOTER END */
+/* Button used to open the createGamePopUp */
+#createGameButton {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+}
+
+/* The gamePopUp form - hidden by default */
+.create-game-popup {
+  display: none;
+  position: fixed;
+}
