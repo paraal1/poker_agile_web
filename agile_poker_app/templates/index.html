@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agile Poker Game</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/index_style.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="index-page">
+    <header>
+      <a href="#" class="brand"
+        ><img src="static/images/brand_logo.svg" alt="brand" />Start Estimating
+        Smarter Today!</a
+      >
+      <li>
+        <ul>
+          <button>About</button>
+          <button>Pricing</button>
+          <button>Home</button>
+        </ul>
+      </li>
+    </header>
+
+    <main>
+      <div class="first-section-landing">
+        <div class="first-section-text">
+          <h2>Empower Your Team to Deliver Value Faster with Agile.</h2>
+          <p><i>Focus on what matters most.</i></p>
+        </div>
+        <div class="first-section-button">
+          <form action="/create_game" method="get">
+            <button id="createGameButton">Create Game</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        COPYRIGHT © 2025 Paraschivoiu Alexandru Daniel ® ALL RIGHTS RESERVED
+      </p>
+    </footer>
+    <script></script>
+  </body>
+</html>

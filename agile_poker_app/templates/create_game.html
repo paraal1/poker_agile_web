@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Game</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/create_game.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="create-game-page">
+    <div class="create-game-popup" id="game-popup">
+      <form action="/create_game" method="POST" class="game-popup-container">
+        <input
+          type="text"
+          id="game-name-input"
+          placeholder="Enter game name"
+          name="game_title"
+          required
+          autocomplete="off"
+        />
+        <select
+          id="voting_system"
+          name="voting_system"
+          class="game-popup-container"
+          required
+        >
+          <option value="fibonacci">
+            Fibonacci (0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ?, ☕)
+          </option>
+          <option value="t-shirt">T-Shirt Sizes</option>
+          <option value="powers_of_two">Powers of Two</option>
+        </select>
+
+        <div class="button-container">
+          <button type="submit" class="submit-game-popup">Finish</button>
+          <!-- Use type="button" to avoid triggering form validation for Go back -->
+          <button type="button" id="goBackButton" class="submit-game-popup">
+            Go back
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // JavaScript to handle the "Go back" button functionality
+      document
+        .getElementById("goBackButton")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent form submission
+          window.location.href = "/"; // Redirect to the index page
+        });
+    </script>
+
+    <script></script>
+  </body>
+</html>
